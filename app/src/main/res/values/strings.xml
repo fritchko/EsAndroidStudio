@@ -4,8 +4,17 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="third_fragment_label">Third Fragment</string>
+    <string name="second_activity_fragment_label">Second Activity Fragment</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_new">Create New Profile</string>
+    <string name="action_logout">Logout</string>
+    <string name="toast_message">Here are the toasts!</string>
+    <string name="third">Third Fragment</string>
+    <string name="second">Second Fragment</string>
+    <string name="first">First Fragment</string>
+    <string name="secondActivity">Second Activity</string>
+    <string name="newScreen">Nuova Activity? Che bel testo!</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -43,4 +52,7 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
 </resources>

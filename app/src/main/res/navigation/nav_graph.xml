@@ -12,9 +12,19 @@
         tools:layout="@layout/fragment_first">
 
         <action
+            android:id="@+id/action_FirstFragment_to_SecondActivity"
+            app:destination="@id/secondActivity" />
+
+        <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+
     </fragment>
+
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.esandroidstudio.SecondFragment"
@@ -24,5 +34,30 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="com.example.esandroidstudio.ThirdFragment"
+        android:label="@string/third_fragment_label"
+        tools:layout="@layout/fragment_third">
+
+        <action
+            android:id="@+id/action_ThirdFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_ThirdFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <activity
+        android:id="@+id/secondActivity"
+        android:name="com.example.esandroidstudio.SecondActivity"
+        android:label="activity_second"
+        tools:layout="@layout/activity_second" />
+
+
 </navigation>

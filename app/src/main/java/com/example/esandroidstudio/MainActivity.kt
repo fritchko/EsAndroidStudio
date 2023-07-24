@@ -1,7 +1,6 @@
 package com.example.esandroidstudio
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.navigation.findNavController
@@ -10,6 +9,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import com.example.esandroidstudio.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -31,9 +31,10 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAnchorView(R.id.fab)
-                .setAction("Action", null).show()
+//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                .setAnchorView(R.id.fab)
+//                .setAction("Action", null).show()
+            Toast.makeText(this,"Here's a toast!", Toast.LENGTH_LONG).show()
         }
     }
 
@@ -48,8 +49,12 @@ class MainActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
+            R.id.action_settings -> {
+                Toast.makeText(this,"Settings menu item chosen", Toast.LENGTH_SHORT).show()
+                true }
+            R.id.action_new -> {Toast.makeText(this,"I want to create a new profile!", Toast.LENGTH_SHORT).show()
+                true }
+        else -> true
         }
     }
 
